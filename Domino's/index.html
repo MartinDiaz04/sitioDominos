@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>PLANTILLA V5.2.2</title>
+
+    <!-- el start template lo pueden encontrar en .... -->
+    <!-- https://getbootstrap.com/docs/5.2/getting-started/introduction/ -->
+
+    <!-- ENLACE A HOJAS ESTILOS... -->
+
+    <!-- 1 - hoja de bootstrap - NO SE EDITA!!! -->
+    <!-- ENTENDIBLE -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- COMPILADA -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+
+    <!-- 2 - mi propia hoja de estilos - SI SE EDITA - "pisar y sobreescribir la de 
+    bootstrap" -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- ENLACE A JS -->
+    <!-- compilado... -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- abierto -->
+    <!-- <script src="js/bootstrap.bundle.js"></script> -->
+
+
+</head>
+<body>
+
+    <main class="container-fluid">
+        <header class="row justify-content-center align-items-center mb-4">
+            <figure class="col-lg-8 text-center">
+                <img src="img/logo.jpg" alt="" class="img-fluid w-50">
+            </figure>
+            <nav class="col-lg-6 text-center pt-3">
+                <ul class="list-unstyled list-inline">
+                    <li class="list-inline-item">
+                        <a href="#pizzas" class="text-decoration-none p-3">Pizzas</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#tiendas" class="text-decoration-none p-3">Tiendas</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#pedidos" class="text-decoration-none p-3">Pedidos</a>
+                    </li>
+            </nav>
+        </header>
+
+        <section class="row mb-3">
+            <h1 class="col-12 text-center p-3">i <span>love</span> pizza</h1>
+        </section>
+
+        <section class="row justify-content-center align-items-center" id="pizzas">
+            <h2 class="col-lg-12 text-center">DESTACADOS <span>DEL MES</span></h2>
+
+            <article class="col-xs-12 col-sm-6 col-md-3 p-3">
+                <figure>
+                    <img src="img/pizza-americana.jpeg" alt="Pizza Americana" class="img-fluid w-100">
+                </figure>
+                <a href="#" class="text-decoration-none p-2 mb-2 d-block text-center w-100">PEDI AHORA</a>
+                <h3>Pizza Americana</h3>
+                <p>Base de Salsa & Cheese, Panceta, Pepperoni, Cebolla, Cheddar.</p>
+            </article>
+            <article class="col-xs-12 col-sm-6 col-md-3 p-3">
+                <figure>
+                    <img src="img/pizza-hawaiana.jpeg" alt="Pizza Hawaiana" class="img-fluid w-100">
+                </figure>
+                <a href="#" class="text-decoration-none p-2 mb-2 d-block text-center w-100">PEDI AHORA</a>
+                <h3>Pizza Hawaiana</h3>
+                <p>Base de Salsa & Cheese, Anan‡, Pollo, Panceta y Salsa BBQ.</p>
+            </article>
+            <article class="col-xs-12 d-none d-md-block col-md-3 p-3">
+                <figure>
+                    <img src="img/pizza-pecado.jpeg" alt="Pizza Pecado" class="img-fluid w-100">
+                </figure>
+                <a href="#" class="text-decoration-none p-2 mb-2 d-block text-center w-100">PEDI AHORA</a>
+                <h3>Pizza Pecado Carnal</h3>
+                <p>Base de Salsa & Cheese, Pepperoni, Pollo, Panceta y Jam—n</p>
+            </article>
+        </section>
+
+        <section class="row p-0 p-md-5">
+            <h1 class="col-12 text-center d-none d-md-block">MMMM.. QUE SABOR!</h1>
+        </section>
+
+        <section class="row justify-content-center align-items-center mt-4 pt-3" id="tiendas">
+            <h2 class="col-12 text-center text-uppercase">nuestras tiendas</h2>
+            <article class="col-xs-6 col-md-3">
+                <figure>
+                    <img src="img/local-1.jpeg" alt="" class="img-fluid rounded">
+                    <p>Local en Dinamarca</p>
+                </figure>
+            </article>
+            <article class="col-xs-6 col-md-3">
+                <figure>
+                    <img src="img/local-2.jpeg" alt="" class="img-fluid rounded">
+                    <p>Local en China</p>
+                </figure>
+            </article>
+            <article class="col-xs-12 col-md-3">
+                <figure>
+                    <img src="img/local-2.jpeg" alt="" class="img-fluid rounded">
+                    <p>Local en Singapur</p>
+                </figure>
+            </article>
+        </section>  
+
+        <section class="row justify-content-center my-4" id="pedidos">
+            <h2 class="col-lg-12 text-center text-uppercase">hacenos <span>tu pedido</span></h2>
+            <figure class="d-none d-lg-block col-lg-4">
+                <img src="img/local.jpg" alt="" class="img-fluid">
+            </figure>
+            <form class="col-md-6 col-lg-4"> 
+                <label for="nombre">Nombre * </label>
+                <input type="text" id="nombre" placeholder="Ej. Lucas Perez" required class="w-100 p-2 mb-2">
+                <label for="nombre">E-mail *  * </label>
+                <input type="text" id="nombre" placeholder="Ej. Lucas Perez" required class="w-100 p-2 mb-2">
+                <label for="sabor">Sabor</label>
+                <select name="Sabor" id="sabor" class="w-100 p-2 mb-2">
+                    <option value="Americana">Americana</option>
+                </select>
+                <label for="comentario">Comentarios del pedido </label>
+                <textarea name="comentario" id="comentario" cols="30" rows="2" placeholder="Cortada en 8, etc." class="w-100 p-2 mb-2"></textarea>
+                <input type="checkbox" value="Acepto" id="datos">
+                <label for="datos" class="check">Acepto brindar mis datos para sorteos</label>
+                <input type="submit" value="Enviar" class="w-50 p-2 mt-2">
+            </form>
+        </section>
+
+        <footer class="row">
+            <p class="col-12 text-center pt-3">Sitio creado por: Nombre Alumno</p>
+            <nav class="col-12 text-center">
+                <ul class="list-inline text-center">
+                    <li class="list-inline-item">
+                        <a href=""><img src="img/f.png" alt="" class="img-fluid"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href=""><img src="img/i.png" alt="" class="img-fluid"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href=""><img src="img/t.png" alt="" class="img-fluid"></a>
+                    </li>
+                </ul>
+            </nav>
+            
+        </footer>
+
+
+
+</main>
+
+
+  
+
+
+
+
+</body>
+
+</html>
